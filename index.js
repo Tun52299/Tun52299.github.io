@@ -1,12 +1,12 @@
 let counter = 0;
 
 // Static
-const birthdayString = "Birthday: October 2, 2007";
+const birthdayString = "Birthday: March 4, 2005";
 
 // Countdown
-const birthdayMonth = 10;
-const birthdayDay = 2;
-const birthYear = 2006;
+const birthdayMonth = 3;
+const birthdayDay = 4;
+const birthYear = 2004;
 const today = new Date();
 const currentYear = today.getFullYear();
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('countdown').textContent = birthdayString;
 
     //Status
-    fetch('https://api.lanyard.rest/v1/users/786795224738824253')
+    fetch('https://api.lanyard.rest/v1/users/794389736277803048')
         .then(response => response.json())
         .then(data => {
             const status = data.data.discord_status;
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(setRadioText, 500);
 
-    let a = new EventSource("https://api.zeno.fm/mounts/metadata/subscribe/roivzrlfi63tv");
+    let a = new EventSource("https://api.zeno.fm/mounts/metadata/subscribe/ldvobrlabguvv");
     a.onmessage = function(t) {
         let e = JSON.parse(t.data);
         if (e.streamTitle) {
@@ -118,7 +118,7 @@ function radiotoggle() {
 
     if (radio == null) {
         radioIsLoading = true;
-        radio = new Audio('https://stream.zeno.fm/roivzrlfi63tv');
+        radio = new Audio('https://stream.zeno.fm/ldvobrlabguvv');
         radio.addEventListener("canplaythrough", (event) => {
             radioIsLoading = false;
         });
