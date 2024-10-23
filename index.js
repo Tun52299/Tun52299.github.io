@@ -1,12 +1,12 @@
 let counter = 0;
 
-//Static
-const birthdayString = "Birthday: October 12, 2008";
+// Static
+const birthdayString = "Birthday: October 2, 2007";
 
-//Countdown
+// Countdown
 const birthdayMonth = 10;
-const birthdayDay = 12;
-const birthYear = 2008;
+const birthdayDay = 2;
+const birthYear = 2006;
 const today = new Date();
 const currentYear = today.getFullYear();
 
