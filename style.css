@@ -62,34 +62,7 @@ body {
     .bio-text {
         margin-left: 0px;
         margin-top: 0;
-        line-height: 1.5; /* Adjusted line height to avoid text overlap */
-    }
-
-    .project-text {
-        margin-left: 0px;
-        margin-top: 0;
-        line-height: 1.5; /* Adjusted line height */
-    }
-
-    .bio {
-        flex-direction: column; /* Ensure text and avatar stack vertically */
-        align-items: start; /* Align text properly */
-    }
-
-    #bio-status {
-        left: 80px; /* Adjusted position for better spacing on small screens */
-        top: 5px;
-        font-size: 50px; /* Reduce size to avoid overlap */
-    }
-
-    .project {
-        display: block; /* Ensure no side-by-side layout, making everything stack vertically */
-        padding: 15px; /* Add more padding for easier reading */
-    }
-
-    /* Additional spacing adjustments to avoid text overlap */
-    .paragraph {
-        padding-bottom: 15px;
+        line-height: 10px;
     }
 }
 
@@ -132,6 +105,7 @@ a:link {
     color: white;
 }
   
+
 a:visited {
     color: white;
 }
@@ -191,7 +165,7 @@ a:visited {
 }
 
 /* For small screens (phones) */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .project {
         background-color: #ffffff20;
         border-radius: 10px;
@@ -202,9 +176,58 @@ a:visited {
     .project-text {
         margin-left: 0px;
         margin-top: 0;
-        line-height: 1.5; /* Adjusted line height */
+        line-height: 20px;
+    }
+} */
+/* Điều chỉnh cho các thiết bị nhỏ hơn */
+@media (max-width: 767px) {
+    /* Điều chỉnh vị trí của bio-text để tránh đè */
+    .bio-text {
+        margin-left: 0;
+        margin-top: 0;
+        line-height: 1.5;
+        padding-bottom: 20px; /* Tăng thêm khoảng trống giữa các đoạn */
+    }
+
+    /* Điều chỉnh kích thước và vị trí của bio-avatar để không đè */
+    .bio-avatar {
+        flex: none; /* Ngăn chặn việc avatar chiếm quá nhiều chỗ */
+        width: 100px; /* Điều chỉnh kích thước avatar */
+        margin-bottom: 10px; /* Thêm khoảng cách giữa avatar và nội dung */
+    }
+
+    /* Điều chỉnh vị trí của bio-name để không bị đè */
+    .bio-name {
+        font-size: 1.8rem;
+        margin-top: 10px; /* Thêm khoảng cách phía trên */
+    }
+
+    /* Điều chỉnh vị trí và kích thước radio-text để không che phần khác */
+    #radio-text {
+        bottom: 5px; /* Hạ thấp vị trí để không che phần chính */
+        font-size: 14px; /* Giảm kích thước chữ */
+        z-index: 1; /* Đảm bảo nó nằm dưới các phần tử khác */
+    }
+    
+    /* Giữ kích thước icon hợp lý */
+    .icon-list {
+        font-size: 1.5rem;
+        margin-top: 10px; /* Thêm khoảng cách giữa icon và đoạn văn */
+    }
+    .project {
+        background-color: #ffffff20;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .project-text {
+        margin-left: 0px;
+        margin-top: 0;
+        line-height: 22px;
     }
 }
+
 
 .project-title {
     font-size: 20px;
