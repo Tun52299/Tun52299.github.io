@@ -62,7 +62,34 @@ body {
     .bio-text {
         margin-left: 0px;
         margin-top: 0;
-        line-height: 10px;
+        line-height: 1.5; /* Adjusted line height to avoid text overlap */
+    }
+
+    .project-text {
+        margin-left: 0px;
+        margin-top: 0;
+        line-height: 1.5; /* Adjusted line height */
+    }
+
+    .bio {
+        flex-direction: column; /* Ensure text and avatar stack vertically */
+        align-items: start; /* Align text properly */
+    }
+
+    #bio-status {
+        left: 80px; /* Adjusted position for better spacing on small screens */
+        top: 5px;
+        font-size: 50px; /* Reduce size to avoid overlap */
+    }
+
+    .project {
+        display: block; /* Ensure no side-by-side layout, making everything stack vertically */
+        padding: 15px; /* Add more padding for easier reading */
+    }
+
+    /* Additional spacing adjustments to avoid text overlap */
+    .paragraph {
+        padding-bottom: 15px;
     }
 }
 
@@ -105,7 +132,6 @@ a:link {
     color: white;
 }
   
-
 a:visited {
     color: white;
 }
@@ -176,7 +202,7 @@ a:visited {
     .project-text {
         margin-left: 0px;
         margin-top: 0;
-        line-height: 20px;
+        line-height: 1.5; /* Adjusted line height */
     }
 }
 
