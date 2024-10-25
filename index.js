@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('countdown').textContent = birthdayString;
 
     //Status
-    fetch('https://api.lanyard.rest/v1/users/794389736277803048')
+    fetch('https://api.lanyard.rest/v1/users/699291160157618226')
         .then(response => response.json())
         .then(data => {
             const status = data.data.discord_status;
