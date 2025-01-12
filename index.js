@@ -6,7 +6,7 @@ const birthdayString = "Birthday: March 4, 2005";
 // Countdown
 const birthdayMonth = 3;
 const birthdayDay = 4;
-const birthYear = 2004;
+const birthYear = 2005;
 const today = new Date();
 const currentYear = today.getFullYear();
 
